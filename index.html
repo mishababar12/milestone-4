@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Editable Resume Builder</h1>
+
+    <form id="resumeForm">
+        <fieldset>
+                <legend>PERSONAL INFORMATION</legend> <br>
+                <input type="text" id="name" placeholder="Name:" required /> <br><br>
+                <input type="email" id="email" placeholder="Email:" required /> <br><br>
+                <input type="text" id="phone" placeholder="Phone:" required /> <br><br><br>
+            </fieldset>
+        <fieldset>
+                <legend>EDUCATION</legend> <br>
+                <input type="text" id="degree" placeholder="Degree:" required /> <br><br>
+                <input type="text" id="institute" placeholder="Institute:" required /> <br><br>
+                <input type="text" id="year" placeholder="Year:" required /> <br><br>
+        </fieldset>
+            
+
+        <fieldset>   
+                <legend>EXPERIENCE</legend> <br>
+                <textarea id="experience" placeholder="Experience"></textarea> <br><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>SKILLS</legend> <br>
+                <textarea id="skills" placeholder="Skills"></textarea> <br><br>
+            </fieldset>
+            
+    
+        <button type="submit">Generate Resume</button>
+    </form>
+    
+    <div id="resumeOutput"></div>
+    <button id="editButton" style="display: none;">Edit Resume</button>
+</div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
